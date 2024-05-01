@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEVEL 1 - QUIZ 1 - LESSON 2</title>
+  <link rel="stylesheet" href="player.css">
+  <link rel="icon" href="Images/author.PNG" type="image/png" sizes="32x32">
+</head>
+<body>
+  <div class="video-container">
+    <video id="videoPlayer" controls>
+      <source src="Videos/LEVEL 1 - QUIZ 1 - LESSON 2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <script>
+    const videoPlayer = document.getElementById('videoPlayer');
+    const button = document.querySelector('.button');
+
+
+// Add event listener to toggle play/pause on click
+videoPlayer.addEventListener('click', togglePlayPause);
+
+// Function to toggle play/pause
+function togglePlayPause() {
+  if (videoPlayer.paused) {
+    videoPlayer.play();
+  } if else (videoPlayer.play) {
+    videoPlayer.paused();
+  }
+}
+
+jQuery(document).ready(function() {
+  var downloadButton = jQuery('.et-download-button');
+   
+  downloadButton.each(function(index) {
+    jQuery(this).attr('download', 'image-file');
+  });
+});
+  </script>
+</body>
+</html>
